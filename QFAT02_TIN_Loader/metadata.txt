@@ -1,0 +1,20 @@
+[general]
+name=QFAT02 TIN Loader
+qgisMinimumVersion=3.34
+qgisMaximumVersion=3.99
+description=Import 12d (.12da) and SMS/XMS (.tin) terrain surfaces as QGIS mesh layers and convert to 2DM.
+about=QFAT02 TIN Loader imports 12d (.12da) and SMS/XMS (.tin) terrain surfaces into QGIS as mesh layers for fast review and QA. It can then convert the surface to 2DM for downstream editing or model inputs (including TUFLOW, which can read 2DM directly).  
+
+QFAT02 is part of QFAT (QGIS Flood Analysis Toolkit): a set of focused QGIS utilities supporting flood modelling workflows (e.g. TUFLOW, HEC-RAS), hydraulic QA, and rapid engineering checks.
+version=2.1.0
+author=FG
+email=fgefge2025@gmail.com
+category=Plugins
+tags=tin,12d,12da,sms,xms,mesh,2dm,tuflow,flood
+icon=icons/qfat_logo.png
+experimental=False
+deprecated=False
+
+homepage=https://github.com/FGE-2025/QFAT02-TIN-Loader
+repository=https://github.com/FGE-2025/QFAT02-TIN-Loader
+tracker=https://github.com/FGE-2025/QFAT02-TIN-Loader/issues
