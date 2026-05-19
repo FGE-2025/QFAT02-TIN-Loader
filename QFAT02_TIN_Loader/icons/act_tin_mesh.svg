@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="#0097A7"/>
+  <path d="M14 46 L28 22 L40 38 L50 18" fill="none" stroke="white" stroke-opacity="0.32" stroke-width="4" stroke-linejoin="round"/>
+  <text x="32" y="38" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="white">TIN</text>
+</svg>
