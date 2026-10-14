@@ -116,6 +116,14 @@ def strip_comment(s: str) -> str:
     return s.split('//', 1)[0].strip()
 
 
+def parse_12d_float(value: str) -> float:
+    """Parse decimal or hexadecimal floating-point values used by 12d exports."""
+    value = value.strip()
+    if value.lower().lstrip("+-").startswith("0x"):
+        return float.fromhex(value)
+    return float(value)
+
+
 def parse_12da(path):
     """Parse a 12d .12da TIN: reads points, triangles, nulling (visibility)."""
     points, triangles, nulling = [], [], []
@@ -152,7 +160,7 @@ def parse_12da(path):
             toks = line.replace(',', ' ').split()
             if len(toks) >= 3:
                 try:
-                    points.append((float(toks[0]), float(toks[1]), float(toks[2])))
+                    points.append((parse_12d_float(toks[0]), parse_12d_float(toks[1]), parse_12d_float(toks[2])))
                 except Exception:
                     pass
         elif in_tris:
